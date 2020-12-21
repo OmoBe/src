@@ -41,6 +41,7 @@ namespace Moneybox.App
                 {
                     throw new InvalidOperationException("Account pay in limit reached");
                 }
+                _paidIn = _paidIn + value;
             }
         }
     }
